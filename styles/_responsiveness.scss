@@ -1,0 +1,81 @@
+@mixin grid850() {
+    .inside-griddy {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 0.5fr 0.5fr !important;
+        grid-column-gap: 20px !important;
+        grid-row-gap: 20px !important;
+        justify-items: stretch !important;
+        align-items: stretch !important;
+     }
+    
+    
+}
+
+@mixin grid388() {
+    .inside-griddy {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 0.5fr 0.5fr !important;
+        grid-column-gap: 20px !important;
+        grid-row-gap: 20px !important;
+        justify-items: stretch !important;
+        align-items: stretch !important;
+     }
+    
+}
+
+@media screen and (max-width: 865px) {
+   
+    @include grid850();
+     .col-3, .col-4{
+        margin-top: 0px !important;
+    }
+    .h1{
+        font-size: 12px;
+    }
+    .inside-container{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .togggle{
+        display: flex;
+        justify-content: space-between !important;
+        gap: 100px !important;
+    }
+    .griddy-2{
+        margin-top: 0px !important;
+    }
+    .inside-griddy-2 {
+        display: grid !important;
+        grid-template-columns: 2fr 2fr !important;
+        grid-template-rows: 0.3fr 0.3fr !important;
+        grid-column-gap: 20px !important;
+        grid-row-gap: 20px !important;
+        justify-items: stretch !important;
+        align-items: stretch !important;
+     }
+     .inl h1{
+         margin-top: 15px;
+     }
+}
+@media screen and (max-width: 388px) {
+    @include grid388();
+    .col-1{
+        margin-top: -30px !important;
+    }
+    .col-2{
+        margin-top: 0px !important;
+    }
+    .inside-griddy-2 {
+        display: grid !important;
+        grid-template-columns: 2fr !important;
+        grid-template-rows: 0.3fr 0.3fr !important;
+        grid-column-gap: 20px !important;
+        grid-row-gap: 20px !important;
+        justify-items: stretch !important;
+        align-items: stretch !important;
+     }
+}
+
+

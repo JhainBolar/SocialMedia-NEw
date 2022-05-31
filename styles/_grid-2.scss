@@ -1,0 +1,66 @@
+.griddy-2{
+    margin-top: -150px;
+}
+
+.inl{
+    width: 80%;
+    margin: auto;
+}
+.inl h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px ;
+}
+
+.inside-griddy-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+ .coll-1, .coll-2, .coll-3, .coll-4, .coll-5, .coll-6, .coll-7, .coll-8{
+    background-color: $dark-desc-blue;
+    border-radius: 8px;
+ }
+ .inside-coll{
+     width: 80%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    gap: 25px;
+    color: #fff;
+
+ }
+ .fb{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 15px;
+ 
+ }
+ .eight{
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 5px;
+ }
+ .top{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 5px;
+    //  margin: auto;
+ }
+ .top img{
+    height: 5px;
+ }
+ .g{
+     font-size: 12px;
+     color: #1DB489 !important ;
+ }
+ .r{
+    color: #DC414C !important;
+    font-size: 12px;
+ }
